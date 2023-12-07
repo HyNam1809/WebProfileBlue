@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/WebProfileBlue/static/css/main.34021bd4.css",
+    "main.css": "/WebProfileBlue/static/css/main.e2e8afab.css",
     "main.js": "/WebProfileBlue/static/js/main.51884e99.js",
     "static/js/787.7b1b22b2.chunk.js": "/WebProfileBlue/static/js/787.7b1b22b2.chunk.js",
     "static/media/Logo_Profile_2.png": "/WebProfileBlue/static/media/Logo_Profile_2.4e2376c680c3d592a368.png",
     "index.html": "/WebProfileBlue/index.html",
-    "main.34021bd4.css.map": "/WebProfileBlue/static/css/main.34021bd4.css.map",
+    "main.e2e8afab.css.map": "/WebProfileBlue/static/css/main.e2e8afab.css.map",
     "main.51884e99.js.map": "/WebProfileBlue/static/js/main.51884e99.js.map",
     "787.7b1b22b2.chunk.js.map": "/WebProfileBlue/static/js/787.7b1b22b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34021bd4.css",
+    "static/css/main.e2e8afab.css",
     "static/js/main.51884e99.js"
   ]
 }
