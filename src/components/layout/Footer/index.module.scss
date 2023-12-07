@@ -1,61 +1,90 @@
 .container_footer {
+    padding: 0 100px 80px;
 
-    .title {
-        font-size: 30px;
-        line-height: normal;
-        font-weight: 700;
-        border-bottom: 2px solid #AEE2FF;
-        transition: border-bottom 0.3s;
-        padding: 50px 70px 30px;
-    }
-
-    .footer {
-        padding: 50px 70px;
-        display: grid;
-        gap: 12px;
+    .title_container {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
 
-        .footer_item {
-            display: flex;
-            justify-content: space-between;
+        .title_item {
+            color: #64748B;
+            font-family: Helvetica;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 140%;
+            margin: 0;
+        }
 
-            .footer_introduce {
-                display: grid;
-                gap: 22px;
+        .title_logo {
+            color: #000957;
+            font-family: SVN-Minerva Modern;
+            font-size: 128.176px;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: -2.564px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 0;
 
-                p {
-                    color: #939395;
-                    font-size: 23px;
-                    font-weight: 500;
-                    margin: 0;
-                }
-            }
-
-            .footer_contact {
-                display: grid;
-                gap: 22px;
-
-                p {
-                    color: #939395;
-                    font-size: 23px;
-                    font-weight: 500;
-                    margin: 0;
-                }
+            &:hover {
+                color: #DB2828;
             }
         }
 
-        .logo_item {
-            display: flex;
-            gap: 10px;
+        .title_phone {
+            color: #000957;
+            font-family: SVN-Minerva Modern;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: -0.8px;
+            text-transform: uppercase;
+        }
+    }
 
-            svg {
-                cursor: pointer;
-                transition: all 0.3 ease;
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .title_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            width: 100%;
+
+            .title_item {
+                color: #64748B;
+                font-family: Helvetica;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 140%;
+                margin: 0;
             }
 
-            svg:hover {
-                path {
-                    fill: #939395;
+            .title_icon {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+
+                .title_icon_item {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 16px;
+
+                    p {
+                        margin: 0;
+                        color: #000957;
+                        font-family: Helvetica;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 150%;
+                        letter-spacing: 0.8px;
+                        text-decoration-line: underline;
+                    }
                 }
             }
         }
@@ -69,29 +98,35 @@
         .title {
             padding: 50px 20px 30px;
         }
-       .footer {
-        padding: 50px 20px;
-        .footer_item {
-            display: grid;
-            gap: 18px;
-            .footer_introduce {
+
+        .footer {
+            padding: 50px 20px;
+
+            .footer_item {
+                display: grid;
+                gap: 18px;
+
+                .footer_introduce {
+                    display: flex;
+
+                    p {
+                        font-size: 18px;
+                    }
+                }
+
+                .footer_contact {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .logo_item {
                 display: flex;
-                p {
-                    font-size: 18px;
-                }
-            }
-            .footer_contact {
-                p {
-                    font-size: 18px;
-                }
+                justify-content: center;
+                align-items: center;
             }
         }
-        .logo_item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-       }
     }
 }
 
@@ -100,6 +135,7 @@
         .title {
             padding: 50px 20px 30px;
         }
+
         .footer {
             padding: 50px 20px;
         }

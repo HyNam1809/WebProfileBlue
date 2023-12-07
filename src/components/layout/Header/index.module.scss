@@ -1,59 +1,43 @@
 .container_header {
-    padding: 50px 70px;
+    padding: 50px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 
     .title {
-        font-size: 30px;
-        line-height: normal;
-        font-weight: 700;
+        color: #DB2828;
+        text-align: center;
+        font-family: SVN-Minerva Modern;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 140%;
+        text-transform: uppercase;
     }
 
-    .menu_information {
+    .button_contact {
         display: flex;
         gap: 40px;
 
-        button {
-            font-size: 17px;
-            font-weight: 500;
-            border: none;
-            background: none;
+        .button {
+            padding: 10px 16px;
+            background: transparent;
+            border-radius: 30px;
+            border: 1px solid #000957;
             cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-            position: relative;
-            border-bottom: 2px solid transparent;
-            padding-bottom: 3px;
-            transition: border-bottom 0.3s;
-        }
+            transition: all 0.3s ease;
+            color: #000957;
+            text-align: center;
+            font-family: Helvetica;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 140%;
 
-        button::before,
-        button::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 3px;
-            bottom: 0;
-            background: #939395;
-            transition: width 0.3s, left 0.3s;
-        }
-
-        button::before {
-            left: 50%;
-        }
-
-        button::after {
-            right: 50%;
-        }
-
-        button:hover::before {
-            width: 30%;
-        }
-
-        button:hover::after {
-            width: 30%;
+            &:hover {
+                background: #DB2828;
+                color: #FFFFFF;
+                border: 1px solid #DB2828;
+            }
         }
     }
 }
