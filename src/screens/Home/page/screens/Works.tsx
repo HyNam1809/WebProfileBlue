@@ -15,7 +15,6 @@ const Works = () => {
                             <div className={style.product_content}>
                                 <p className={style.product_item_title}>{item.title}</p>
                                 <p className={style.product_item_content}>{item.content}</p>
-                                <p className={style.product_item_time}>{item.time}</p>
                             </div>
                         </div>
                     ))}

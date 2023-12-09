@@ -6,6 +6,7 @@ import LetTask from "../../screens/Home/page/screens/LetTask"
 import IconFacebook from "../svg/IconFacebook"
 import IconInstagram from "../svg/IconInstagram"
 import IconLinkedin from "../svg/IconLinkedin"
+import SelectedProjects from "../../screens/Home/page/screens/SelectedProjects"
 
 // HEADER
 export const dataHeader = [
@@ -58,15 +59,15 @@ export const dataContact = [
 export const dataIconProfile = [
     {
         id: 1,
-        icon: <IconFacebook/>,
+        icon: <IconFacebook />,
     },
     {
         id: 2,
-        icon: <IconInstagram/>,
+        icon: <IconInstagram />,
     },
     {
         id: 3,
-        icon: <IconLinkedin/>,
+        icon: <IconLinkedin />,
     }
 ]
 
@@ -75,27 +76,33 @@ export const dataHomePage = [
     {
         id: 1,
         title: 'page 1',
-        page: <Home/>
+        page: <Home />
     },
     {
         id: 2,
         title: 'page 2',
-        page: <Infomation/>
+        page: <Infomation />
     },
     {
         id: 3,
         title: 'page 3',
-        page: <Featured/>
+        page: <SelectedProjects />
     },
     {
         id: 4,
         title: 'page 4',
-        page: <Works/>
+        page: <Works />
     },
     {
         id: 5,
         title: 'page 5',
-        page: <LetTask/>
+        page: <Featured />
+    },
+
+    {
+        id: 6,
+        title: 'page 6',
+        page: <LetTask />
     },
 ]
 
@@ -122,4 +129,32 @@ export const dataProduct = [
         content: 'aaaaa',
         time: '2021'
     }
+]
+
+// Content
+export const dataContent = [
+    {
+        id: 1,
+        number: '01',
+        title: 'Direction & Briefing',
+        content: 'I believe that having a comprehensive grasp of the brief and client`s needs is crucial from the outset. This involves establishing project objectives and identifying the specific requirements, analyzing competitors and the target audience, and conducting research to determine the ideal blend of Typography, Color, Composition, & Brand elements. This process is essential for effectively addressing business challenges and determining the best design approach.'
+    },
+    {
+        id: 2,
+        number: '02',
+        title: 'Design',
+        content: 'Having established the desired mood and tone in the direction stage, my focus shifts to refining the design by experimenting with different variations. My aim is always to create a user experience that not only highlights the unique qualities of each project, but also feels sophisticated and user-friendly. To achieve this, I closely collaborate with clients and end-users to gather valuable feedback and insights to inform the design`s evolution.'
+    },
+    {
+        id: 3,
+        number: '03',
+        title: 'Interaction',
+        content: 'I believe interaction play a crucial role in providing the audience with an enjoyable and satisfying experience. A well-executed motion or microinteraction can elevate the user experience to new heights. I take great satisfaction in seeing people`s reactions of amazement and in watching them interact with my designs.'
+    },
+    {
+        id: 4,
+        number: '04',
+        title: 'Development',
+        content: 'Our developers will then take the approved design and turn it into functional software, using the latest technologies and industry best practices. Throughout this step, we`ll keep you updated on progress and make any necessary adjustments.'
+    },
 ]

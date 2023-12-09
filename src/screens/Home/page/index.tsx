@@ -6,7 +6,7 @@ const HomePage = () => {
         <>
             {dataHomePage.map((item, index) => {
                 return (
-                    <div>
+                    <div key={index}>
                         {item.page}
                     </div>
                 )
