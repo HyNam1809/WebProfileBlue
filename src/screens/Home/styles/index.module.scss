@@ -1,5 +1,15 @@
 @import '../../../assets/sass/abstracts/mixin.scss';
 
+@font-face {
+    font-family: 'SVN-Minerva Modern';
+    src: url('../../../assets/fonts/SVNMinervaModern.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../../../assets/fonts/Helvetica.ttf') format('truetype');
+}
+
 h1,
 h2,
 h3,
@@ -20,10 +30,12 @@ section {
     display: grid;
     justify-content: center;
     align-items: center;
-    padding: 100px 180px;
+    padding: 100px 100px;
     gap: 18px;
     margin-bottom: 120px;
     width: 100%;
+
+
 
     .home_image_text {
         display: flex;
@@ -43,7 +55,7 @@ section {
 
             p {
                 color: #000957;
-                font-family: Helvetica;
+                font-family: 'Helvetica';
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 140%;
@@ -52,22 +64,30 @@ section {
             h1 {
                 color: #000957;
                 text-align: center;
-                font-family: SVN-Minerva Modern;
+                font-family: "SVN-Minerva Modern";
                 font-size: 195.165px;
                 font-weight: 400;
                 line-height: 169.793px;
                 text-transform: uppercase;
+
+                @include tablet {
+                    font-size: 150px;
+                }
             }
         }
     }
 
     .home_text_designer {
         color: #000957;
-        font-family: SVN-Minerva Modern;
+        font-family: 'SVN-Minerva Modern';
         font-size: 194.443px;
         font-weight: 400;
         line-height: 169.165px;
         text-transform: uppercase;
+
+        @include tablet {
+            font-size: 150px;
+        }
     }
 }
 
@@ -87,10 +107,13 @@ section {
 
         p {
             color: #000957;
-            font-family: Helvetica;
+            font-family: 'Helvetica';
             font-size: 40px;
             font-weight: 300;
             line-height: 130%;
+            @media only screen and (max-width: 767.98px) {
+                font-size: 18px;
+            }
         }
     }
 
@@ -99,7 +122,11 @@ section {
 
         img {
             width: 497.327px;
-            height: 497.327px
+            height: 497.327px;
+            @media only screen and (max-width: 767.98px) {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }
@@ -111,14 +138,30 @@ section {
     gap: 12px;
     width: 100%;
 
+    @include mobile {
+        padding: 0 20px 60px;
+    }
+
+    @include tablet {
+        padding: 0 50px 120px;
+    }
+
     .selected_projects {
         color: #000957;
-        font-family: SVN-Minerva Modern;
-        font-size: 236.846px;
+        font-family: 'SVN-Minerva Modern';
+        font-size: 250px;
         font-weight: 400;
         line-height: 90%;
         letter-spacing: -4.737px;
         text-transform: uppercase;
+
+        @include mobile {
+            font-size: 80px;
+        }
+
+        @include tablet {
+            font-size: 140px;
+        }
     }
 
     .selected_projects_item {
@@ -128,12 +171,20 @@ section {
         .selected_projects_text {
             color: #000957;
             text-align: right;
-            font-family: SVN-Minerva Modern;
-            font-size: 236.846px;
+            font-family: 'SVN-Minerva Modern';
+            font-size: 250px;
             font-weight: 400;
             line-height: 90%;
             letter-spacing: -4.737px;
             text-transform: uppercase;
+
+            @include mobile {
+                font-size: 80px;
+            }
+
+            @include tablet {
+                font-size: 140px;
+            }
         }
 
         .selected_projects_video_container {
@@ -144,7 +195,15 @@ section {
                 width: 140px;
                 height: 140px;
                 border-radius: 50%;
+                @include mobile {
+                    width: 50px;
+                    height: 50px;
+                }
 
+                @include tablet {
+                    width: 100px;
+                    height: 100px;
+                }
             }
         }
     }
@@ -167,7 +226,7 @@ section {
 
         p {
             color: #000;
-            font-family: SVN-Minerva Modern;
+            font-family: 'SVN-Minerva Modern';
             font-size: 100px;
             font-style: normal;
             font-weight: 400;
@@ -226,6 +285,10 @@ section {
         gap: 80px;
         width: 100%;
 
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
         .product_item {
             display: grid;
             align-items: center;
@@ -243,7 +306,7 @@ section {
 
                 .product_item_title {
                     color: #000957;
-                    font-family: SVN-Minerva Modern;
+                    font-family: 'SVN-Minerva Modern';
                     font-size: 40px;
                     font-weight: 400;
                     line-height: 120%;
@@ -251,8 +314,8 @@ section {
 
                 .product_item_content {
                     color: var(--neutral-50, #64748B);
-                    font-family: Helvetica;
-                    font-size: 14px;
+                    font-family: 'Helvetica';
+                    font-size: 18px;
                     font-weight: 400;
                     line-height: 140%;
                     text-decoration-line: underline;
@@ -269,6 +332,13 @@ section {
     align-items: center;
     justify-content: center;
     padding: 100px 0;
+    @include tablet {
+        padding: 50px 0;
+    }
+
+    @include mobile {
+        display: block;
+    }
 
     .content_container {
         display: grid;
@@ -276,10 +346,16 @@ section {
 
         .content_item {
             display: flex;
-            gap: 80px;
+            gap: 400px;
             justify-content: start;
             padding: 32px 0;
-            
+
+            @include tablet {
+                gap: 80px; 
+            }
+            @include mobile {
+                gap: 8px; 
+            }
 
             &.border_bottom {
                 border-bottom: 1px solid #94A3B8;
@@ -287,7 +363,7 @@ section {
 
             .content_number {
                 color: #DB2828;
-                font-family: Helvetica;
+                font-family: 'Helvetica';
                 font-size: 14px;
                 font-weight: 300;
                 line-height: 130%;
@@ -301,7 +377,7 @@ section {
 
                 .content_text_title {
                     color: #000957;
-                    font-family: SVN-Minerva Modern;
+                    font-family: 'SVN-Minerva Modern';
                     font-size: 32px;
                     font-weight: 400;
                     line-height: 130%;
@@ -309,7 +385,7 @@ section {
 
                 .content_text {
                     color: #000957;
-                    font-family: Helvetica;
+                    font-family: 'Helvetica';
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 150%;
@@ -322,8 +398,6 @@ section {
 // ===== Mobile =====
 
 @media only screen and (max-width: 767.98px) {
-
-    // ===== Home =====
     .container_home {
         padding: 100px 20px;
 
@@ -355,7 +429,6 @@ section {
         }
     }
 
-    // ===== INFOMATION =====
     .container_information {
         padding: 0 20px;
         display: grid;
@@ -374,7 +447,6 @@ section {
         }
     }
 
-    // ===== =====
     .container_featured {
         gap: 20px;
         padding: 50px 0;
@@ -390,13 +462,11 @@ section {
         }
     }
 
-    // ===== Works =====
     .container_works {
         padding: 20px;
     }
 }
 
-// ===== tablet =====
 @media only screen and (min-width: 768px) and (max-width: 1180.98px) {
 
     // ===== Home =====

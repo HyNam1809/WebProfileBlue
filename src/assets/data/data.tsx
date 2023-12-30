@@ -7,6 +7,10 @@ import IconFacebook from "../svg/IconFacebook"
 import IconInstagram from "../svg/IconInstagram"
 import IconLinkedin from "../svg/IconLinkedin"
 import SelectedProjects from "../../screens/Home/page/screens/SelectedProjects"
+import ImagePr01 from '../../assets/images/ImagePr01.png'
+import ImagePr02 from '../../assets/images/ImagePr02.png'
+import ImagePr03 from '../../assets/images/ImagePr03.png'
+import ImagePr04 from '../../assets/images/ImagePr04.png'
 
 // HEADER
 export const dataHeader = [
@@ -110,24 +114,27 @@ export const dataHomePage = [
 export const dataProduct = [
     {
         id: '1',
-        img: 'https://png.pngtree.com/png-vector/20200622/ourmid/pngtree-carrot-cute-character-logo-icon-png-image_2260896.jpg',
-        title: 'name 1',
-        content: 'aaaaa',
-        time: '2021'
+        img: ImagePr01,
+        title: 'YarraLand Real Estate',
+        content: 'Visit website',
     },
     {
         id: '2',
-        img: 'https://png.pngtree.com/png-vector/20200622/ourmid/pngtree-carrot-cute-character-logo-icon-png-image_2260896.jpg',
-        title: 'name 2',
-        content: 'aaaaa',
-        time: '2021'
+        img: ImagePr02,
+        title: 'Uway Technology',
+        content: 'Visit website',
     },
     {
         id: '3',
-        img: 'https://png.pngtree.com/png-vector/20200622/ourmid/pngtree-carrot-cute-character-logo-icon-png-image_2260896.jpg',
-        title: 'name 3',
-        content: 'aaaaa',
-        time: '2021'
+        img: ImagePr03,
+        title: 'Vias Hotel Vung Tau',
+        content: 'Visit website',
+    },
+    {
+        id: '4',
+        img: ImagePr04,
+        title: 'HIIVE Binh Duong Hotel',
+        content: 'Visit website',
     }
 ]
 
