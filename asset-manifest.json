@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/WebProfileBlue/static/css/main.b1ce839e.css",
-    "main.js": "/WebProfileBlue/static/js/main.beb5e433.js",
+    "main.css": "/WebProfileBlue/static/css/main.25b87367.css",
+    "main.js": "/WebProfileBlue/static/js/main.59ee7a29.js",
     "static/js/787.7b1b22b2.chunk.js": "/WebProfileBlue/static/js/787.7b1b22b2.chunk.js",
     "static/media/video.gif": "/WebProfileBlue/static/media/video.2732e7425485cca77be5.gif",
-    "static/media/avatar.jpg": "/WebProfileBlue/static/media/avatar.f19c38751e61b3e7ae61.jpg",
+    "static/media/avatar_home.jpg": "/WebProfileBlue/static/media/avatar_home.1d62ba1d9ce532db4eef.jpg",
+    "static/media/Helvetica.ttf": "/WebProfileBlue/static/media/Helvetica.06113bf748ae7dc33e05.ttf",
+    "static/media/ImagePr03.png": "/WebProfileBlue/static/media/ImagePr03.675bb73069781b1b3de6.png",
+    "static/media/ImagePr04.png": "/WebProfileBlue/static/media/ImagePr04.70c82645c66b2fbae897.png",
+    "static/media/ImagePr01.png": "/WebProfileBlue/static/media/ImagePr01.800dd7bf4486fbe105c0.png",
+    "static/media/ImagePr02.png": "/WebProfileBlue/static/media/ImagePr02.addb96d9c03f832aec2b.png",
+    "static/media/Bubble.png": "/WebProfileBlue/static/media/Bubble.1dfe982679c7ddbae8a7.png",
+    "static/media/SVNMinervaModern.otf": "/WebProfileBlue/static/media/SVNMinervaModern.213b5479dc020110c6c8.otf",
     "index.html": "/WebProfileBlue/index.html",
-    "main.b1ce839e.css.map": "/WebProfileBlue/static/css/main.b1ce839e.css.map",
-    "main.beb5e433.js.map": "/WebProfileBlue/static/js/main.beb5e433.js.map",
+    "main.25b87367.css.map": "/WebProfileBlue/static/css/main.25b87367.css.map",
+    "main.59ee7a29.js.map": "/WebProfileBlue/static/js/main.59ee7a29.js.map",
     "787.7b1b22b2.chunk.js.map": "/WebProfileBlue/static/js/787.7b1b22b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1ce839e.css",
-    "static/js/main.beb5e433.js"
+    "static/css/main.25b87367.css",
+    "static/js/main.59ee7a29.js"
   ]
 }
